@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SplashScreenStyle" parent="Theme.AppCompat.NoActionBar">
+
+    </style>
+
+    <style name="NoBarStyle" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:background">@color/white</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:textColorHint">@color/gray</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+</resources>

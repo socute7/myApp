@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.UAS">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Sambongrejo"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".HomeActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".LaporanPenjualanActivity"
+            android:exported="false"
+            android:label="Laporan Penjualan"
+            android:parentActivityName=".PenjualanCekActivity" />
+        <activity
+            android:name=".PenjualanCekActivity"
+            android:exported="false"
+            android:theme="@style/NoBarStyle" />
+        <activity
+            android:name=".KonsumenUpdateActivity"
+            android:exported="false"
+            android:label="Edit Konsumen"
+            android:parentActivityName=".KonsumenActivity" />
+        <activity
+            android:name=".KonsumenFormActivity"
+            android:exported="false"
+            android:label="Tambah Konsumen"
+            android:parentActivityName=".KonsumenActivity" />
+        <activity
+            android:name=".KonsumenActivity"
+            android:exported="false"
+            android:label="Konsumen" />
+        <activity
+            android:name=".InvoiceProdukActivity"
+            android:exported="false"
+            android:label="Daftar Produk"
+            android:parentActivityName=".PembelianActivity" />
+        <activity
+            android:name=".PembelianActivity"
+            android:exported="false"
+            android:label="History Pembelian" />
+        <activity
+            android:name=".CreateInvoiceActivity"
+            android:exported="false"
+            android:label="INVOICE" />
+        <activity
+            android:name=".PembayaranActivity"
+            android:exported="false"
+            android:label="Pembayaran" />
+        <activity
+            android:name=".rajaongkir.PilihKurir"
+            android:exported="false"
+            android:label="Pengiriman" />
+        <activity
+            android:name=".DetailActivity"
+            android:exported="false"
+            android:label="Detail Produk"/>
+        <activity
+            android:name=".RegistrasiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/SplashScreenStyle">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
